@@ -11,7 +11,9 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO9E8B-yEY8ZMBb8RgWN9UQsOUQRYM7jw&loading=async&callback=initMap">
+    </script>
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -40,7 +42,7 @@
             <div class="ht-info">
                 <ul>
                     <li id="dateTimeDisplayMobile"></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">info@afcase.org</a></li>
                 </ul>
             </div>
             <div class="ht-links">
@@ -72,7 +74,7 @@
                         <div class="ht-info">
                             <ul>
                                 <li id="dateTimeDisplay"></li>
-                                <li><a href="#">AFCASE</a></li>
+                                <li><a href="#">info@afcase.org</a></li>
                             </ul>
                         </div>
                     </div>
@@ -121,10 +123,9 @@
 
     <!-- Map Section Begin -->
     <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.271618925628!2d-73.6794031851738!3d41.019313126695636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c29772c9aecd8b%3A0x7bb929f83bd76a38!2sBetsy%20Brown%20Rd%2C%20Rye%2C%20NY%2010573%2C%20USA!5e0!3m2!1sen!2sbd!4v1580843692833!5m2!1sen!2sbd"
-            height="500" style="border:0;" allowfullscreen=""></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10744.933675343017!2d11.502045480542463!3d3.848259098370931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7bb929f83bd76a38!2sBetsy%20Brown%20Rd%2C%20Rye%2C%20NY%2010573%2C%20USA!5e0!3m2!1sen!2sbd!4v1580843692833!5m2!1sen!2sbd" height="500" style="border:0;" allowfullscreen=""></iframe>
     </div>
+    
     <!-- Map Section End -->
 
     <!-- Contact Section Begin -->
@@ -160,17 +161,17 @@
                         <div class="ci-address">
                             <h5>Cameroon Office</h5>
                             <ul>
-                                <li>Yaounde Cameroon</li>
-                                <li>1-234-567-89011</li>
-                                <li>info@gmail.com </li>
+                                <li>kodengui Yaoundé Cameroon</li>
+                                <li>237-677-293-961</li>
+                                <li>info@afcase.org</li>
                             </ul>
                         </div>
                         <div class="ci-address">
                             <h5>Germany Office</h5>
                             <ul>
-                                <li>Forrest Ray, 191-103 Integer Rd, Corona Germany</li>
-                                <li>1-234-567-89011</li>
-                                <li>info@gmail.com </li>
+                                <li>Sankt Augustin NRW </li>
+                                <li>49 176-4007-5625</li>
+                                <li>info@afcase.org </li>
                             </ul>
                         </div>
                     </div>
@@ -190,8 +191,8 @@
                             <a href="./index.html"><img src="img/logo.png" style="height: 50px; width: 50px;" alt=""></a>
                         </div>
                         <ul>
-                            <li><i class="fa fa-envelope"></i> Info.AFSEC@gmail.com</li>
-                            <li><i class="fa fa-copy"></i> +(12) 345 6789 10</li>
+                            <li><i class="fa fa-envelope"></i> info@afcase.org</li>
+                            <li><i class="fa fa-copy"></i> +(237) 677293961</li>
                             <li><i class="fa fa-thumb-tack"></i> Yaounde Cameroon</li>
                         </ul>
                         <div class="fs-social">
@@ -267,3 +268,16 @@
 </body>
 
 </html>
+
+<script>
+    let map;
+
+    function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 3.848259098370931, lng: 11.502045480542463},
+        zoom: 8,
+    });
+    }
+
+    window.initMap = initMap;
+</script>
