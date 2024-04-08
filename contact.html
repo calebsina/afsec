@@ -11,9 +11,7 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO9E8B-yEY8ZMBb8RgWN9UQsOUQRYM7jw&loading=async&callback=initMap">
-    </script>
+  
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
@@ -58,6 +56,7 @@
             <li><a href="./club.html">Club</a></li>
             <li><a href="./schedule.html">Schedule</a></li>
             <li><a href="./result.html">Results</a></li>
+            <li><a href="./blog-details.html">Projects</a></li>
             
             <li><a href="./contact.html">Contact Us</a></li>
         </ul>
@@ -95,7 +94,7 @@
                 <div class="row">
                     <div class="col-lg-2">
                         <div class="logo">
-                            <a href="./index.html"><img src="img/logo.png" style="height: 30px; width: 50px;" alt=""></a>
+                            <a href="./index.html"><img src="img/logo.png" style="height: 40px; width: 40px;" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-10">
@@ -105,6 +104,8 @@
                                 <li><a href="./club.html">Club</a></li>
                                 <li><a href="./schedule.html">Schedule</a></li>
                                 <li><a href="./result.html">Results</a></li>
+                                <li><a href="./blog-details.html">Projects</a></li>
+                                
                                 <li class="active"><a href="./contact.html">Contact Us</a></li>
                             </ul>
                             <div class="nm-right search-switch">
@@ -191,8 +192,8 @@
                             <a href="./index.html"><img src="img/logo.png" style="height: 50px; width: 50px;" alt=""></a>
                         </div>
                         <ul>
-                            <li><i class="fa fa-envelope"></i> info@afcase.org</li>
-                            <li><i class="fa fa-copy"></i> +(237) 677293961</li>
+                            <li><i class="fa fa-envelope"></i> info@afsec.org</li>
+                            <li><i class="fa fa-copy"></i> +(237) 677 293 961</li>
                             <li><i class="fa fa-thumb-tack"></i> Yaounde Cameroon</li>
                         </ul>
                         <div class="fs-social">
@@ -269,15 +270,3 @@
 
 </html>
 
-<script>
-    let map;
-
-    function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 3.848259098370931, lng: 11.502045480542463},
-        zoom: 8,
-    });
-    }
-
-    window.initMap = initMap;
-</script>
